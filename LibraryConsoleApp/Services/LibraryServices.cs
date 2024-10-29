@@ -5,6 +5,7 @@ using System.Data.SqlTypes;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace LibraryConsoleApp.Services
@@ -17,22 +18,25 @@ namespace LibraryConsoleApp.Services
 
         public void AddBook()
         {
-            Console.WriteLine("Enter book title:");
+            Console.Write("Enter book title: \t");
             string title = Console.ReadLine();
-            Console.WriteLine("Enter book author:");
+            Console.Write("Enter book author: \t");
             string author = Console.ReadLine();
-            Console.WriteLine("Enter book description:");
+            Console.Write("Enter book description: \t");
             string description = Console.ReadLine();
 
             var book = new Book(books.Count + 1, title, author, description);
             books.Add(book);
 
             Console.WriteLine($"Book '{title}' by {author} added.");
+            Thread.Sleep(3000);
+            Console.Clear();
         }
         public void BorrowBook()
         {
             Console.WriteLine("Enter book title:");
            string title = Console.ReadLine();
+
         }
         public void ReturnBook()
         {
