@@ -34,9 +34,8 @@ namespace LibraryConsoleApp.Services
         }
         public void BorrowBook()
         {
-            Console.WriteLine("Enter book title:");
+           
            string title = Console.ReadLine();
-
         }
         public void ReturnBook()
         {
@@ -44,6 +43,13 @@ namespace LibraryConsoleApp.Services
         }
         public void ShowAllBooks()
         {
+            //shows amount of books and their titles
+            Console.Clear();
+            Console.WriteLine("There are: " + (books.Capacity = books.Count) + "books in library");
+            Console.WriteLine(books[0].Title);
+            Thread.Sleep(3000);
+            Console.Clear();
+
             Console.WriteLine();
         }
     }
