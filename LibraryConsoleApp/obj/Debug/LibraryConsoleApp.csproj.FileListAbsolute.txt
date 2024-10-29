@@ -1,0 +1,7 @@
+C:\Users\Jaro\source\repos\LibraryConsoleApp\LibraryConsoleApp\bin\Debug\LibraryConsoleApp.exe.config
+C:\Users\Jaro\source\repos\LibraryConsoleApp\LibraryConsoleApp\bin\Debug\LibraryConsoleApp.exe
+C:\Users\Jaro\source\repos\LibraryConsoleApp\LibraryConsoleApp\bin\Debug\LibraryConsoleApp.pdb
+C:\Users\Jaro\source\repos\LibraryConsoleApp\LibraryConsoleApp\obj\Debug\LibraryConsoleApp.csproj.AssemblyReference.cache
+C:\Users\Jaro\source\repos\LibraryConsoleApp\LibraryConsoleApp\obj\Debug\LibraryConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Jaro\source\repos\LibraryConsoleApp\LibraryConsoleApp\obj\Debug\LibraryConsoleApp.exe
+C:\Users\Jaro\source\repos\LibraryConsoleApp\LibraryConsoleApp\obj\Debug\LibraryConsoleApp.pdb
