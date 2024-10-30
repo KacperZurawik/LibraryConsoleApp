@@ -29,7 +29,7 @@ namespace LibraryConsoleApp.Services
             books.Add(book);
 
             Console.WriteLine($"Book '{title}' by {author} added.");
-            Thread.Sleep(3000);
+            Thread.Sleep(1000);
             Console.Clear();
         }
         public void BorrowBook()
@@ -43,14 +43,21 @@ namespace LibraryConsoleApp.Services
         }
         public void ShowAllBooks()
         {
-            //shows amount of books and their titles
             Console.Clear();
-            Console.WriteLine("There are: " + (books.Capacity = books.Count) + "books in library");
-            Console.WriteLine(books[0].Title);
-            Thread.Sleep(3000);
-            Console.Clear();
+            Console.WriteLine($"There are {books.Count} books in the library.\n");
 
-            Console.WriteLine();
+            //shows all books that have been added
+            foreach (var book in books)
+            {
+                Console.WriteLine($"ID: {book.Id}");
+                Console.WriteLine($"Title: {book.Title}");
+                Console.WriteLine($"Author: {book.Author}");
+                Console.WriteLine($"Description: {book.Description}");
+                Console.WriteLine($"Borrow status: {book.IsBorrowed}");
+
+                //creates space between each books using "-" 30 times
+                Console.WriteLine(new string('-', 35));
+            }
         }
     }
 }
