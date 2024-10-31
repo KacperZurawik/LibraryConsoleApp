@@ -48,25 +48,21 @@ namespace LibraryConsoleApp.Services
 
         public void ShowAllBooks()
         {
-            Console.Write("Enter book title:\t");
-            string title = Console.ReadLine();
+         
+            Console.Clear();
+            Console.WriteLine($"There are {books.Count} books in the library.\n");
 
+            //shows all books that have been added
+            foreach (var book in books)
             {
-                Console.Clear();
-                Console.WriteLine($"There are {books.Count} books in the library.\n");
+                Console.WriteLine($"ID: {book.Id}");
+                Console.WriteLine($"Title: {book.Title}");
+                Console.WriteLine($"Author: {book.Author}");
+                Console.WriteLine($"Description: {book.Description}");
+                Console.WriteLine($"Borrow status: {book.IsBorrowed}");
 
-                //shows all books that have been added
-                foreach (var book in books)
-                {
-                    Console.WriteLine($"ID: {book.Id}");
-                    Console.WriteLine($"Title: {book.Title}");
-                    Console.WriteLine($"Author: {book.Author}");
-                    Console.WriteLine($"Description: {book.Description}");
-                    Console.WriteLine($"Borrow status: {book.IsBorrowed}");
-
-                    //creates space between each books using "-" 30 times
-                    Console.WriteLine(new string('-', 35));
-                }
+                 //creates space between each books using "-" 30 times
+                 Console.WriteLine(new string('-', 35));
             }
         }
     }
