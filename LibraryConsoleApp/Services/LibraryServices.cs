@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Linq;
+using System.Reflection;
 using System.Security.Principal;
 using System.Text;
 using System.Threading;
@@ -32,31 +33,40 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(1000);
             Console.Clear();
         }
+
         public void BorrowBook()
         {
-           
-           string title = Console.ReadLine();
+            
+            
+
         }
+
         public void ReturnBook()
         {
-            Console.WriteLine();
+
         }
+
         public void ShowAllBooks()
         {
-            Console.Clear();
-            Console.WriteLine($"There are {books.Count} books in the library.\n");
+            Console.Write("Enter book title:\t");
+            string title = Console.ReadLine();
 
-            //shows all books that have been added
-            foreach (var book in books)
             {
-                Console.WriteLine($"ID: {book.Id}");
-                Console.WriteLine($"Title: {book.Title}");
-                Console.WriteLine($"Author: {book.Author}");
-                Console.WriteLine($"Description: {book.Description}");
-                Console.WriteLine($"Borrow status: {book.IsBorrowed}");
+                Console.Clear();
+                Console.WriteLine($"There are {books.Count} books in the library.\n");
 
-                //creates space between each books using "-" 30 times
-                Console.WriteLine(new string('-', 35));
+                //shows all books that have been added
+                foreach (var book in books)
+                {
+                    Console.WriteLine($"ID: {book.Id}");
+                    Console.WriteLine($"Title: {book.Title}");
+                    Console.WriteLine($"Author: {book.Author}");
+                    Console.WriteLine($"Description: {book.Description}");
+                    Console.WriteLine($"Borrow status: {book.IsBorrowed}");
+
+                    //creates space between each books using "-" 30 times
+                    Console.WriteLine(new string('-', 35));
+                }
             }
         }
     }
