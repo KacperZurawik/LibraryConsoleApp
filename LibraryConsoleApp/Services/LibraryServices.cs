@@ -38,11 +38,23 @@ namespace LibraryConsoleApp.Services
 
         public void BorrowBook()
         {
-            
-            
+            Console.WriteLine("Is the person available in the Library system? \n Y/N?");
+
+            if (Console.ReadLine() == "Y")
+            {
+                Console.WriteLine("Enter e-mail address: \t");
+                string email = null;
+            }
+            if (Console.ReadLine() == "N")
+            {
+                AddPerson();
+            }
+            else
+            {
+                Console.WriteLine("You must enter 'Y' or 'N'");
+            }
 
         }
-
         public void ReturnBook()
         {
 
