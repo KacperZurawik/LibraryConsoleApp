@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Reflection;
+using System.Security.Cryptography;
 using System.Security.Principal;
 using System.Text;
 using System.Threading;
@@ -110,7 +111,7 @@ namespace LibraryConsoleApp.Services
 
                 if (email == null)
                 {
-
+                    Console.WriteLine("");
                 }
             }
         }

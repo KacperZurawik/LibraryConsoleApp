@@ -26,7 +26,8 @@ namespace LibraryConsoleApp
                 Console.WriteLine("2. Borrow the book");
                 Console.WriteLine("3. Return the book");
                 Console.WriteLine("4. Show All books");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Search person");
+                Console.WriteLine("6. Exit");
 
                 string menuOptionChoice = Console.ReadLine();
                 
@@ -50,6 +51,10 @@ namespace LibraryConsoleApp
                         break;
 
                     case "5":
+                        libraryServices.SearchPerson();
+                        break;
+
+                    case "6":
                         running = false;
                         break;
                 }
