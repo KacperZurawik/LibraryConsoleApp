@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Net;
+using System.Net.Mail;
 using System.Reflection;
 using System.Security.Principal;
 using System.Text;
@@ -40,12 +41,12 @@ namespace LibraryConsoleApp.Services
         {
             Console.WriteLine("Is the person available in the Library system? \n Y/N?");
 
-            if (Console.ReadLine() == "Y")
+            if (Console.ReadLine() == "y")
             {
                 Console.WriteLine("Enter e-mail address: \t");
                 string email = null;
             }
-            if (Console.ReadLine() == "N")
+            if (Console.ReadLine() == "n")
             {
                 AddPerson();
             }
@@ -95,6 +96,23 @@ namespace LibraryConsoleApp.Services
 
             var person = new Person(people.Count + 1, name, lastName, address, phoneNumber, email);
             people.Add(person);
+        }
+        public void SearchPerson()
+        {
+            if (people.Count == 0)
+            {
+                Console.WriteLine("There are no user in the system.");
+            }
+            else
+            {
+                Console.WriteLine("Enter an address e-mail: ");
+                string email = Console.ReadLine();
+
+                if (email == null)
+                {
+
+                }
+            }
         }
     }
 }
