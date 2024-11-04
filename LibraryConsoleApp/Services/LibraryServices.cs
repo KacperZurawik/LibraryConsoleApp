@@ -40,14 +40,15 @@ namespace LibraryConsoleApp.Services
 
         public void BorrowBook()
         {
-            Console.WriteLine("Is the person available in the Library system? \n Y/N?");
+            Console.WriteLine("Is the person available in the Library system? \nY/N?");
+            string isPersonRegistered = Console.ReadLine();
 
-            if (Console.ReadLine() == "y")
+            if (isPersonRegistered == "y")
             {
                 Console.WriteLine("Enter e-mail address: \t");
-                string email = null;
+                string email = Console.ReadLine();
             }
-            if (Console.ReadLine() == "n")
+            if (isPersonRegistered == "n")
             {
                 AddPerson();
             }
@@ -95,11 +96,17 @@ namespace LibraryConsoleApp.Services
             Console.Write("Enter e-mail address: \t");
             string email = Console.ReadLine();
 
+            Console.WriteLine($"{name} {lastName} has been registered. \nMail: {email} \nPhone number: {phoneNumber}");
+
             var person = new Person(people.Count + 1, name, lastName, address, phoneNumber, email);
             people.Add(person);
+
+            Thread.Sleep(5000);
+            Console.Clear();
         }
         public void SearchPerson()
         {
+            Console.WriteLine("Enter email: ");
             if (people.Count == 0)
             {
                 Console.WriteLine("There are no user in the system.");

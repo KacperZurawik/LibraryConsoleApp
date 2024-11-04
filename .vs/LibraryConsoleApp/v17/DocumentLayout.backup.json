@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E380BD87-0430-4BE4-AB63-A0AEF4AA24B2}|LibraryConsoleApp\\LibraryConsoleApp.csproj|C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\libraryconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E380BD87-0430-4BE4-AB63-A0AEF4AA24B2}|LibraryConsoleApp\\LibraryConsoleApp.csproj|solutionrelative:libraryconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E380BD87-0430-4BE4-AB63-A0AEF4AA24B2}|LibraryConsoleApp\\LibraryConsoleApp.csproj|c:\\users\\jaro\\source\\repos\\libraryconsoleapp\\libraryconsoleapp\\services\\libraryservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E380BD87-0430-4BE4-AB63-A0AEF4AA24B2}|LibraryConsoleApp\\LibraryConsoleApp.csproj|solutionrelative:libraryconsoleapp\\services\\libraryservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E380BD87-0430-4BE4-AB63-A0AEF4AA24B2}|LibraryConsoleApp\\LibraryConsoleApp.csproj|C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\libraryconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E380BD87-0430-4BE4-AB63-A0AEF4AA24B2}|LibraryConsoleApp\\LibraryConsoleApp.csproj|solutionrelative:libraryconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E380BD87-0430-4BE4-AB63-A0AEF4AA24B2}|LibraryConsoleApp\\LibraryConsoleApp.csproj|C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\libraryconsoleapp\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,20 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "LibraryConsoleApp\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Models\\Book.cs",
-              "RelativeToolTip": "LibraryConsoleApp\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:32:02.088Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -50,34 +38,45 @@
               "RelativeToolTip": "LibraryConsoleApp\\Models\\Person.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:28:35.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:28:35.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LibraryServices.cs",
               "DocumentMoniker": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Services\\LibraryServices.cs",
               "RelativeDocumentMoniker": "LibraryConsoleApp\\Services\\LibraryServices.cs",
               "ToolTip": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Services\\LibraryServices.cs",
               "RelativeToolTip": "LibraryConsoleApp\\Services\\LibraryServices.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAowHUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAkwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T08:25:55.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Program.cs",
               "RelativeDocumentMoniker": "LibraryConsoleApp\\Program.cs",
               "ToolTip": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Program.cs",
               "RelativeToolTip": "LibraryConsoleApp\\Program.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAADgAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T08:24:48.522Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "LibraryConsoleApp\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Models\\Book.cs",
+              "RelativeToolTip": "LibraryConsoleApp\\Models\\Book.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T08:32:02.088Z"
             }
           ]
         }
