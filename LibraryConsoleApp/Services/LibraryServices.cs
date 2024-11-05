@@ -82,7 +82,7 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine(new string('-', 35));
             }
         }
-        //done today
+        //done yesterday
         public void AddPerson()
         {
             Console.Write("Enter name: \t");
@@ -104,22 +104,24 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(5000);
             Console.Clear();
         }
-        //finished here today
+        //finished here yesterday
         public void SearchPerson()
         {
+
             Console.WriteLine("Enter email: ");
             if (people.Count == 0)
             {
                 Console.WriteLine("There are no user in the system.");
             }
-            else
+            if (people.Count == 1) 
             {
                 Console.WriteLine("Enter an address e-mail: ");
                 string email = Console.ReadLine();
 
-                if (email == null)
+                if (people.Any(person => person.Email == email))
                 {
-                    Console.WriteLine("");
+                    Console.WriteLine(people);
+                    Console.ReadLine();
                 }
             }
         }
