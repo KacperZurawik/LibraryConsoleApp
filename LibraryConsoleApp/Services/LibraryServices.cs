@@ -125,5 +125,21 @@ namespace LibraryConsoleApp.Services
                 }
             }
         }
+
+        public void ShowUsers()
+        {
+            foreach (var person in people)
+            {
+                Console.WriteLine(person.Name);
+                Console.WriteLine(person.LastName);
+                Console.WriteLine(person.Address);
+                Console.WriteLine(person.PhoneNumber);
+                Console.WriteLine(person.Email);
+
+                Console.WriteLine(new string('-', 35));
+            }
+            
+            
+        }
     }
 }
