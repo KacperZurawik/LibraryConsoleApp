@@ -79,7 +79,7 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine($"Borrow status: {book.IsIssued}");
 
                 //creates space between each books using "-" 30 times
-                Console.WriteLine(new string('-', 35));
+                Console.WriteLine(new string('-', 45));
             }
         }
         //done yesterday
@@ -136,10 +136,8 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine(person.PhoneNumber);
                 Console.WriteLine(person.Email);
 
-                Console.WriteLine(new string('-', 35));
-            }
-            
-            
+                Console.WriteLine(new string('-', 45));
+            } 
         }
     }
 }
