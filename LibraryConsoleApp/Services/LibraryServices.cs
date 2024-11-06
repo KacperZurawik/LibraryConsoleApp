@@ -38,7 +38,7 @@ namespace LibraryConsoleApp.Services
             Console.Clear();
         }
 
-        public void BorrowBook()
+        public void IssueBook()
         {
             Console.WriteLine("Is the person available in the Library system? \nY/N?");
             string isPersonRegistered = Console.ReadLine();
@@ -76,7 +76,7 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine($"Title: {book.Title}");
                 Console.WriteLine($"Author: {book.Author}");
                 Console.WriteLine($"Description: {book.Description}");
-                Console.WriteLine($"Borrow status: {book.IsBorrowed}");
+                Console.WriteLine($"Borrow status: {book.IsIssued}");
 
                 //creates space between each books using "-" 30 times
                 Console.WriteLine(new string('-', 35));

@@ -23,7 +23,7 @@ namespace LibraryConsoleApp
             {
                 Console.WriteLine("Choose an option: ");
                 Console.WriteLine("1. Add a book");
-                Console.WriteLine("2. Borrow the book");
+                Console.WriteLine("2. Issue the book");
                 Console.WriteLine("3. Return the book");
                 Console.WriteLine("4. Show All books");
                 Console.WriteLine("5. Search person");
@@ -40,7 +40,7 @@ namespace LibraryConsoleApp
                         break;  
                     case "2":
                         Console.Clear();
-                        libraryServices.BorrowBook();
+                        libraryServices.IssueBook();
                         break;
 
                     case "3":

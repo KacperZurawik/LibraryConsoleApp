@@ -13,14 +13,14 @@ namespace LibraryConsoleApp.Models
         public string Title { get; set; }
         public string Author { get; set; }
         public string Description { get; set; }
-        public bool IsBorrowed { get; set; }
+        public bool IsIssued { get; set; }
 
         public Book(int id,string title, string author, string Description)
         {
             Id = id;
             Title = title;
             Author = author;
-            IsBorrowed = false;
+            IsIssued = false;
         }
     }
 }
