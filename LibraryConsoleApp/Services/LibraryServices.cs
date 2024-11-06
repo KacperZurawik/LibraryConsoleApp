@@ -43,12 +43,12 @@ namespace LibraryConsoleApp.Services
             Console.WriteLine("Is the person available in the Library system? \nY/N?");
             string isPersonRegistered = Console.ReadLine();
 
-            if (isPersonRegistered == "y")
+            if (isPersonRegistered == "y" && isPersonRegistered == "Y")
             {
                 Console.WriteLine("Enter e-mail address: \t");
                 string email = Console.ReadLine();
             }
-            if (isPersonRegistered == "n")
+            if (isPersonRegistered == "n" && isPersonRegistered == "N")
             {
                 AddPerson();
             }
@@ -113,7 +113,7 @@ namespace LibraryConsoleApp.Services
             {
                 Console.WriteLine("There are no user in the system.");
             }
-            if (people.Count == 1) 
+            if (people.Count == 1 ) 
             {
                 Console.WriteLine("Enter an address e-mail: ");
                 string email = Console.ReadLine();
