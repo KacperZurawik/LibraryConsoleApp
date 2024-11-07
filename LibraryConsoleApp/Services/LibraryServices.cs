@@ -113,7 +113,7 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(5000);
             Console.Clear();
         }
-        //this doesnt work yet
+        //this doesnt work yet but updated IssueBook method - there you can search users by email
         public void SearchPerson()
         {
             
