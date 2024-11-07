@@ -139,5 +139,11 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine(new string('-', 45));
             } 
         }
+        //this method assign issued book to a person
+        public void BookAssignment()
+        {
+            
+            //it must work like: book + person = issue ID
+        }
     }
 }
