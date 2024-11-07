@@ -82,7 +82,7 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine(new string('-', 45));
             }
         }
-        //done yesterday
+      
         public void AddPerson()
         {
             Console.Write("Enter name: \t");
@@ -104,7 +104,7 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(5000);
             Console.Clear();
         }
-        //finished here yesterday
+        //this doesnt work yet
         public void SearchPerson()
         {
 
