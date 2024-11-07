@@ -47,6 +47,15 @@ namespace LibraryConsoleApp.Services
             {
                 Console.WriteLine("Enter e-mail address: \t");
                 string email = Console.ReadLine();
+
+                if (people.Any(p => p.Email == email)) 
+                {
+                    Console.WriteLine(email);
+                }
+                else
+                {
+                    Console.WriteLine("No user found with the specified email.");
+                }
             }
             if (isPersonRegistered == "n" || isPersonRegistered == "N")
             {
@@ -107,7 +116,7 @@ namespace LibraryConsoleApp.Services
         //this doesnt work yet
         public void SearchPerson()
         {
-
+            
             Console.WriteLine("Enter email: ");
             if (people.Count == 0)
             {
