@@ -20,7 +20,6 @@ namespace LibraryConsoleApp.Services
         private List<Book> books = new List<Book>();
         private List<Person> people = new List<Person>();
 
-
         public void AddBook()
         {
             Console.Write("Enter book title: \t");
@@ -57,10 +56,12 @@ namespace LibraryConsoleApp.Services
                     Console.WriteLine("No user found with the specified email.");
                 }
             }
+
             if (isPersonRegistered == "n" || isPersonRegistered == "N")
             {
                 AddPerson();
             }
+
             else
             {
                 Console.WriteLine("You must enter 'Y' or 'N'");
@@ -74,7 +75,6 @@ namespace LibraryConsoleApp.Services
 
         public void ShowAllBooks()
         {
-
             Console.Clear();
             Console.WriteLine($"There are {books.Count} books in the library.\n");
 
@@ -115,13 +115,14 @@ namespace LibraryConsoleApp.Services
         }
         //this doesnt work yet but updated IssueBook method - there you can search users by email
         public void SearchPerson()
-        {
-            
+        {         
             Console.WriteLine("Enter email: ");
+
             if (people.Count == 0)
             {
                 Console.WriteLine("There are no user in the system.");
             }
+
             if (people.Count == 1 ) 
             {
                 Console.WriteLine("Enter an address e-mail: ");
@@ -147,6 +148,7 @@ namespace LibraryConsoleApp.Services
 
                 Console.WriteLine(new string('-', 45));
             } 
+
         }
         //this method assign issued book to a person
         public void BookAssignment()
