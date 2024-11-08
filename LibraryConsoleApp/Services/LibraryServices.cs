@@ -19,6 +19,7 @@ namespace LibraryConsoleApp.Services
     {
         private List<Book> books = new List<Book>();
         private List<Person> people = new List<Person>();
+        private List<Issue> issues = new List<Issue>();
 
         public void AddBook()
         {
