@@ -37,7 +37,7 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(1000);
             Console.Clear();
         }
-        //need to update IssueBook
+        //SRP issue here
         public void IssueBook() 
         {
             Console.WriteLine("Is the person available in the Library system? \nY/N?");
@@ -51,7 +51,7 @@ namespace LibraryConsoleApp.Services
                 if (people.Any(p => p.Email == email)) 
                 {
                     Console.WriteLine(email);
-                }
+                }          
                 else
                 {
                     Console.WriteLine("No user found with the specified email.");
@@ -124,7 +124,7 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine("There are no user in the system.");
             }
 
-            if (people.Count == 1 ) 
+            if (people.Count >= 1 ) 
             {
                 Console.WriteLine("Enter an address e-mail: ");
                 string email = Console.ReadLine();
@@ -154,7 +154,7 @@ namespace LibraryConsoleApp.Services
         //this method assign issued book to a person
         public void BookAssignment()
         {
-            
+
             //it must work like: book + person = issue ID
         }
     }
