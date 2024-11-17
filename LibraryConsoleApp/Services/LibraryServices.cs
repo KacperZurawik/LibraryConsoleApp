@@ -114,7 +114,7 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(5000);
             Console.Clear();
         }
-        //this doesnt work yet but updated IssueBook method - there you can search users by email
+        //Investigate duplicated functionality in the IssueBook method
         public void SearchPerson()
         {         
             Console.WriteLine("Enter email: ");
