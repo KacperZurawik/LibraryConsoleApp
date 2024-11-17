@@ -22,9 +22,9 @@ namespace LibraryConsoleApp
             while (running)
             {
                 Console.WriteLine("Choose an option: ");
-                Console.WriteLine("1. Add a book");
-                Console.WriteLine("2. Issue the book");
-                Console.WriteLine("3. Return the book");
+                Console.WriteLine("1. Add book");
+                Console.WriteLine("2. Issue book");
+                Console.WriteLine("3. Return book");
                 Console.WriteLine("4. Show All books");
                 Console.WriteLine("5. Search person");
                 Console.WriteLine("6. Show registered people");
@@ -38,6 +38,7 @@ namespace LibraryConsoleApp
                         Console.Clear();
                         libraryServices.AddBook();
                         break;  
+                    
                     case "2":
                         Console.Clear();
                         libraryServices.IssueBook();
