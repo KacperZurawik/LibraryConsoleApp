@@ -12,6 +12,7 @@ namespace LibraryConsoleApp.Models
         public int IssueId { get; set; }
         public string Title { get; set; }
         public string Name { get; set; }
+        public DateTime IssuedAt { get; set; }
 
         public Issue(int issueId, string title, string name)
         {
