@@ -37,36 +37,12 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(1000);
             Console.Clear();
         }
-        //SRP issue here
+  
         public void IssueBook() 
         {
-            Console.WriteLine("Is the person available in the Library system? \nY/N?");
-            string isPersonRegistered = Console.ReadLine();
+            IsPersonRegistered();
 
-            if (isPersonRegistered == "y" || isPersonRegistered == "Y")
-            {
-                Console.WriteLine("Enter e-mail address: \t");
-                string email = Console.ReadLine();
-
-                if (people.Any(p => p.Email == email)) 
-                {
-                    Console.WriteLine(email);
-                }          
-                else
-                {
-                    Console.WriteLine("No user found with the specified email.");
-                }
-            }
-
-            if (isPersonRegistered == "n" || isPersonRegistered == "N")
-            {
-                AddPerson();
-            }
-
-            else
-            {
-                Console.WriteLine("You must enter 'Y' or 'N'");
-            }
+            Console.WriteLine();
 
         }
         public void ReturnBook()
@@ -157,8 +133,41 @@ namespace LibraryConsoleApp.Services
         //this method assign issued book to a person
         public void BookAssignment()
         {
-
-            //it must work like: book + person = issue ID
+        
         }
+        // This method checks if the person is registered in the system. 
+        // If not, you can create a new record or find if the person is already registered.
+        public void IsPersonRegistered()
+        {
+            Console.WriteLine("Is the person available in the Library system? \nY/N?");
+            string isPersonRegistered = Console.ReadLine();
+
+            if (isPersonRegistered == "y" || isPersonRegistered == "Y")
+            {
+                Console.WriteLine("Enter e-mail address: \t");
+                string email = Console.ReadLine();
+
+                if (people.Any(p => p.Email == email))
+                {
+                    Console.WriteLine(email);
+                }
+                else
+                {
+                    Console.WriteLine("No user found with the specified email.");
+                }
+            }
+
+            if (isPersonRegistered == "n" || isPersonRegistered == "N")
+            {
+                AddPerson();
+            }
+
+            else
+            {
+                Console.WriteLine("You must enter 'Y' or 'N'");
+            }
+        }
+
+
     }
 }
