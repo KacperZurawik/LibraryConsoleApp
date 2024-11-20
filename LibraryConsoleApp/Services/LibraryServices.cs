@@ -139,6 +139,9 @@ namespace LibraryConsoleApp.Services
 
         public void ShowUsers()
         {
+            Console.Clear();
+            Console.WriteLine($"There are {people.Count} people in the library management system registered.\n");
+
             foreach (var person in people)
             {
                 Console.WriteLine(person.Name);
