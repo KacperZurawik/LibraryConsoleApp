@@ -5,6 +5,7 @@ using System.Data.SqlTypes;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.Security.Principal;
@@ -37,12 +38,14 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(1000);
             Console.Clear();
         }
-  
+        //Finished here
         public void IssueBook() 
         {
             IsPersonRegistered();
+            
+            Console.WriteLine("Enter book title: \t");
+            string title = Console.ReadLine();
 
-            Console.WriteLine();
 
         }
         public void ReturnBook()
@@ -68,7 +71,8 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine(new string('-', 45));
             }
         }
-      
+
+     
         public void AddPerson()
         {
             Console.Write("Enter name: \t");
@@ -133,7 +137,7 @@ namespace LibraryConsoleApp.Services
         //this method assign issued book to a person
         public void BookAssignment()
         {
-        
+            
         }
         // This method checks if the person is registered in the system. 
         // If not, you can create a new record or find if the person is already registered.
