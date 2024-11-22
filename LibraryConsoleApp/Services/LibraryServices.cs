@@ -45,9 +45,8 @@ namespace LibraryConsoleApp.Services
             
             Console.WriteLine("Enter book title: \t");
             string title = Console.ReadLine();
-
-
         }
+
         public void ReturnBook()
         {
 
@@ -71,7 +70,6 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine(new string('-', 45));
             }
         }
-
      
         public void AddPerson()
         {
@@ -171,7 +169,6 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine("You must enter 'Y' or 'N'");
             }
         }
-
 
     }
 }
