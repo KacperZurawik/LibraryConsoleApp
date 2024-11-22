@@ -2,6 +2,7 @@
 > C# console application
 
 Purpose of the application is to help and maintain library. The application includes features like (at this moment):
+
    - adding books
    - searching for books
    - adding users
@@ -10,17 +11,18 @@ Purpose of the application is to help and maintain library. The application incl
 ### Application is still in progress!
 
 #    Technology Stack
-Language: C#
-Framework: .NET
-Database: -
+- Language: C#
+- Framework: .NET
+- Database: -
 
 #   Project Goals
-To demonstrate skills in Object-Oriented Programming (OOP).
-To explore concepts like:
-Interfaces: For handling common functionalities.
-Inheritance: To avoid code duplication.
-Enums: For organizing constants.
-To develop a clean, maintainable, and extendable code.
+
+- To demonstrate skills in Object-Oriented Programming (OOP).
+- To explore concepts like:
+   - Interfaces: For handling common functionalities.
+   - Inheritance: To avoid code duplication.
+   - Enums: For organizing constants.
+   - Just to develop a clean, maintainable, and extendable code.
 
 #   Future Plans
 
