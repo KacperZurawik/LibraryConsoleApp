@@ -41,10 +41,15 @@ namespace LibraryConsoleApp.Services
         //Finished here
         public void IssueBook() 
         {
-            IsPersonRegistered();
+            //IsPersonRegistered();
             
             Console.WriteLine("Enter book title: \t");
             string title = Console.ReadLine();
+            
+            if (books.Any(p => p.Title == title))
+            {
+                Console.WriteLine($"Do you want to issue {title}?");
+            }
         }
 
         public void ReturnBook()
@@ -169,6 +174,6 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine("You must enter 'Y' or 'N'");
             }
         }
-
+        
     }
 }
