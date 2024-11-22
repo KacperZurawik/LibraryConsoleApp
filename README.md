@@ -8,12 +8,12 @@ Purpose of the application is to help and maintain library. The application incl
    - adding users
    - searching for users
 
-### Application is still in progress!
+### :warning:Application is still in progress!:warning:
 
 #    Technology Stack
 - Language: C#
 - Framework: .NET
-- Database: -
+- Database: none
 
 #   Project Goals
 
