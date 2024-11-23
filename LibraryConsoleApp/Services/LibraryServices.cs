@@ -186,6 +186,19 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine("You must enter 'Y' or 'N'");
             }
         }
-        
+        public void ShowIssuesList()
+        {
+            Console.Clear();
+            Console.WriteLine($"There are {issues.Count} issues registered.\n");
+
+            //shows all books that have been added
+            foreach (var issue in issues)
+            {
+                Console.WriteLine($"Title: {issue.Title}");
+
+                //creates space between each books using "-" 30 times
+                Console.WriteLine(new string('-', 45));
+            }
+        }
     }
 }
