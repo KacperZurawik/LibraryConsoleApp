@@ -22,7 +22,7 @@ Purpose of the application is to help and maintain library. The application incl
 - To explore concepts like:
    - Interfaces: For handling common functionalities.
    - Inheritance: To avoid code duplication.
-   - Enums: For organizing constants.
+   - Enums: For organizing constant values.
    - Just to develop a clean, maintainable, and extendable code.
 
 #   Future Plans
