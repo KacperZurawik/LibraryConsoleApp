@@ -66,7 +66,6 @@ namespace LibraryConsoleApp.Services
             {
                 Console.WriteLine("There are no books in the system");
             }
-            
         }
 
         public void ReturnBook()
@@ -154,11 +153,7 @@ namespace LibraryConsoleApp.Services
             } 
 
         }
-        //this method assign issued book to a person
-        public void BookAssignment()
-        {
-            
-        }
+
         // This method checks if the person is registered in the system. 
         // If not, you can create a new record or find if the person is already registered.
         public void IsPersonRegistered()
