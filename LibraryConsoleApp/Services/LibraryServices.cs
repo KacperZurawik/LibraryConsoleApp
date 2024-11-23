@@ -21,6 +21,7 @@ namespace LibraryConsoleApp.Services
         private List<Book> books = new List<Book>();
         private List<Person> people = new List<Person>();
         private List<Issue> issues = new List<Issue>();
+        bool isIssued = false;
 
         public void AddBook()
         {
@@ -42,14 +43,30 @@ namespace LibraryConsoleApp.Services
         public void IssueBook() 
         {
             //IsPersonRegistered();
-            
+
             Console.WriteLine("Enter book title: \t");
             string title = Console.ReadLine();
-            
+             
             if (books.Any(p => p.Title == title))
             {
-                Console.WriteLine($"Do you want to issue {title}?");
+                isIssued = true;
+                Console.WriteLine($"Issue book: {title}");
+                Console.WriteLine("Email: \t");
+                string email = Console.ReadLine();
+
+                Console.WriteLine($"Issue {title} for {email}");
+
+                var issue = new Issue(issues.Count + 1, title, email);
+                issues.Add(issue);
+                
+                Thread.Sleep(1000);
             }
+
+            if (books.Count == 0)
+            {
+                Console.WriteLine("There are no books in the system");
+            }
+            
         }
 
         public void ReturnBook()
