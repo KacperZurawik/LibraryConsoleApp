@@ -10,6 +10,8 @@ Purpose of the application is to help and maintain library. The application incl
    - issuing books
    
 ### :warning:Application is still in progress!:warning:
+### ~~✔️Application is finished✔️~~
+### ~~🔨Developing new functionality🔨~~
 
 #    Technology Stack
 - Language: C#
