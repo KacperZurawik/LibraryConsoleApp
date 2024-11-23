@@ -23,6 +23,11 @@ namespace LibraryConsoleApp.Services
         private List<Issue> issues = new List<Issue>();
         bool isIssued = false;
 
+        public interface ISearch
+        {
+
+        }
+
         public void AddBook()
         {
             Console.Write("Enter book title: \t");
