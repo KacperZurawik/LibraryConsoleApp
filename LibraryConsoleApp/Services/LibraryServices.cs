@@ -58,7 +58,10 @@ namespace LibraryConsoleApp.Services
 
                 var issue = new Issue(issues.Count + 1, title, email);
                 issues.Add(issue);
-                
+                var IssuedAt = DateTime.Now;
+
+                Console.WriteLine($"Issue date: { IssuedAt}");
+
                 Thread.Sleep(1000);
             }
 
