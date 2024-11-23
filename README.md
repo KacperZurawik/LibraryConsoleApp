@@ -7,7 +7,8 @@ Purpose of the application is to help and maintain library. The application incl
    - searching for books
    - adding users
    - searching for users
-
+   - issuing books
+   
 ### :warning:Application is still in progress!:warning:
 
 #    Technology Stack
