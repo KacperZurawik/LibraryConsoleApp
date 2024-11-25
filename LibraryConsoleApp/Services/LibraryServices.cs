@@ -78,7 +78,10 @@ namespace LibraryConsoleApp.Services
 
         public void ReturnBook()
         {
-
+            if (issues.Count == 0 )
+            {
+                Console.WriteLine("There are no issues currently");
+            }
         }
 
         public void ShowAllBooks()
