@@ -44,7 +44,7 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(1000);
             Console.Clear();
         }
-        //Finished here
+       
         public void IssueBook() 
         {
             //IsPersonRegistered();
@@ -75,12 +75,20 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine("There are no books in the system");
             }
         }
-
+        //Finished here
         public void ReturnBook()
         {
             if (issues.Count == 0 )
             {
                 Console.WriteLine("There are no issues currently");
+            }
+
+            Console.WriteLine("Enter title: \t");
+            string title = Console.ReadLine();
+
+            if (books.Any(p => p.Title == title))
+            {
+                IsPersonRegistered();
             }
         }
 
@@ -211,5 +219,6 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine(new string('-', 45));
             }
         }
+    
     }
 }
