@@ -42,8 +42,7 @@
               "RelativeToolTip": "LibraryConsoleApp\\Models\\Issue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T18:37:57.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T18:37:57.154Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "LibraryConsoleApp\\Models\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:28:35.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:28:35.675Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "LibraryConsoleApp\\Services\\LibraryServices.cs",
               "ToolTip": "C:\\Users\\Jaro\\source\\repos\\LibraryConsoleApp\\LibraryConsoleApp\\Services\\LibraryServices.cs",
               "RelativeToolTip": "LibraryConsoleApp\\Services\\LibraryServices.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T08:25:55.62Z",
               "EditorCaption": ""
@@ -81,8 +79,7 @@
               "RelativeToolTip": "LibraryConsoleApp\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAD0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:24:48.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:24:48.522Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "LibraryConsoleApp\\Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:32:02.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T08:32:02.088Z"
             }
           ]
         }
