@@ -16,7 +16,7 @@ using System.Xml.Linq;
 
 namespace LibraryConsoleApp.Services
 {
-    public class LibraryServices
+    public class LibraryService
     {
         private List<Book> books = new List<Book>();
         private List<Person> people = new List<Person>();

@@ -13,7 +13,7 @@ namespace LibraryConsoleApp
 {
     internal class Program
     {
-        private static LibraryServices libraryServices = new LibraryServices();
+        private static LibraryService libraryServices = new LibraryService();
 
         static void Main(string[] args)
         {
