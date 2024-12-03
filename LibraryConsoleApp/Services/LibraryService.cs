@@ -83,7 +83,18 @@ namespace LibraryConsoleApp.Services
 
             if (books.Any(p => p.Title == title))
             {
-                IsPersonRegistered();
+                Console.WriteLine($"Do you want to return {title}?");         
+                string makeReturn = Console.ReadLine();
+
+                if (issues.Remove(title))
+                {
+                    Console.WriteLine();
+                }
+                
+                if (makeReturn == "y" || makeReturn == "Y")
+                {
+                   
+                }
             }
         }
 
