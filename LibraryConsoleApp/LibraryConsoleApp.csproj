@@ -48,9 +48,6 @@
     <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\BookRepository.cs" />
-    <Compile Include="Repositories\IssueRepository.cs" />
-    <Compile Include="Repositories\PeopleRepository.cs" />
     <Compile Include="Services\LibraryService.cs" />
   </ItemGroup>
   <ItemGroup>
