@@ -70,33 +70,6 @@ namespace LibraryConsoleApp.Services
                 Console.WriteLine("There are no books in the system");
             }
         }
-        //Finished here
-        public void ReturnBook()
-        {
-            if (issues.Count == 0 )
-            {
-                Console.WriteLine("There are no issues currently");
-            }
-
-            Console.WriteLine("Enter title: \t");
-            string title = Console.ReadLine();
-
-            if (books.Any(p => p.Title == title))
-            {
-                Console.WriteLine($"Do you want to return {title}?");         
-                string makeReturn = Console.ReadLine();
-
-                if (issues.Remove(title))
-                {
-                    Console.WriteLine();
-                }
-                
-                if (makeReturn == "y" || makeReturn == "Y")
-                {
-                   
-                }
-            }
-        }
 
         public void ShowAllBooks()
         {
@@ -138,7 +111,7 @@ namespace LibraryConsoleApp.Services
             Thread.Sleep(5000);
             Console.Clear();
         }
-        //Investigate duplicated functionality in the IssueBook method
+        
         public void SearchPerson()
         {         
             Console.WriteLine("Enter email: ");
@@ -216,12 +189,10 @@ namespace LibraryConsoleApp.Services
             Console.Clear();
             Console.WriteLine($"There are {issues.Count} issues registered.\n");
 
-            //shows all books that have been added
             foreach (var issue in issues)
             {
                 Console.WriteLine($"Title: {issue.Title}");
 
-                //creates space between each books using "-" 30 times
                 Console.WriteLine(new string('-', 45));
             }
         }
