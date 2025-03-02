@@ -19,6 +19,7 @@ namespace LibraryConsoleApp.Models
             IssueId = issueId;
             Title = title;
             Name = name;
+            IssuedAt = DateTime.Now;
         }
     }
 }
