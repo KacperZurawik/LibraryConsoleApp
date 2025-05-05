@@ -1,6 +1,6 @@
 #   Library Management Application 📚
 > C# console application
-> This project was started in December 2024.
+> This project was started in – December 2024.
 
 Purpose of the application is to help and maintain library. The application includes features like (at this moment):
 
