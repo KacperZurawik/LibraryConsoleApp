@@ -7,11 +7,11 @@
 
 Purpose of the application is to help and maintain library. The application includes features like (at this moment):
 
-   - adding books
-   - searching for books
-   - adding users
+   - add a book
+   - issue a book
+   - show all books
    - searching for users
-   - issuing books
+   - show issued books
    
 ### :warning:Application is still in progress!:warning:
 
