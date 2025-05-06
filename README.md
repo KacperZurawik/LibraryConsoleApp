@@ -14,13 +14,11 @@ Purpose of the application is to help and maintain library. The application incl
    - issuing books
    
 ### :warning:Application is still in progress!:warning:
-### ~~✔️Application is finished✔️~~
-### ~~🔨Developing new functionality🔨~~
 
 #    Technology Stack
 - Language: C#
-- Framework: .NET
-- Database: none
+- Framework: .NET 4.7.2
+- Database: currently none
 
 #   Project Goals
 
