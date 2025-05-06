@@ -5,7 +5,8 @@
 > 
 
 
-Purpose of the application is to help and maintain library. The application includes features like (at this moment):
+The primary goal of this project is to gain hands-on experience in building real-world applications using C# and .NET.
+At the same time, the application simulates a simple library system and includes features like:
 
    - add a book
    - issue a book
@@ -21,21 +22,24 @@ Purpose of the application is to help and maintain library. The application incl
 - Database: currently none
 
 #   Project Goals
-
-- To demonstrate skills in Object-Oriented Programming (OOP).
-- To explore concepts like:
-   - Interfaces: For handling common functionalities.
-   - Inheritance: To avoid code duplication.
-   - Enums: For organizing constant values.
-   - Just to develop a clean, maintainable, and extendable code.
+ 
+In addition, the project was created as part of my learning journey. Its purpose is also to:
+Practice and improve skills in C# programming
+   - understand and apply object-oriented programming (OOP) principles
+   - learn the structure and organization of a multi-layered application
+   - follow good coding practices and improve code readability
+   - to develop a clean, maintainable, and extendable code.
+   - gain experience with .NET Framework as a foundation before moving on to modern .NET (.NET 6/8)
+   - gain experience working with Git and GitHub
+   - learn how to write clear and useful technical documentation
 
 #   Future Plans
 
    - database integration (thinking of SQL lite)
-   - Add more like:
-       - DVD's etc. issue
-       - logging
-       - maybe even some framework
-       - make great documentation and readme
+   - implement logging
+   - add proper input validations (to ensure data consistency and robustness)
+   - complete and polish currently unfinished features (e.g. returning books, better search, etc.)
+   - add more like: DVD's etc. issue
+     
     
 
