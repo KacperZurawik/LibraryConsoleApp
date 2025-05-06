@@ -24,10 +24,10 @@ namespace LibraryConsoleApp
                 Console.WriteLine("Choose an option: ");
                 Console.WriteLine("1. Add book");
                 Console.WriteLine("2. Issue book");
-                Console.WriteLine("3. Return book");
+                //Console.WriteLine("3. Return book");
                 Console.WriteLine("4. Show All books");
-                Console.WriteLine("5. Search person");
-                Console.WriteLine("6. Show registered people");
+                //Console.WriteLine("5. Search person");
+                //Console.WriteLine("6. Show registered people");
                 Console.WriteLine("7. Show current issues");
                 Console.WriteLine("8. Exit");
 
