@@ -69,6 +69,8 @@ namespace LibraryConsoleApp.Services
             {
                 Console.WriteLine("There are no books in the system");
             }
+
+            Console.Clear();
         }
 
         public void ShowAllBooks()
