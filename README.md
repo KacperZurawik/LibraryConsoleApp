@@ -7,14 +7,8 @@
 ### :warning:Application is still in progress!:warning:
 
 The primary goal of this project is to gain hands-on experience in building real-world applications using C# and .NET.
-At the same time, the application simulates a simple library system and includes features like:
+At the same time, the application simulates a simple library system.
 
-   - add a book
-   - issue a book
-   - show all books
-   - searching for users
-   - show issued books
-   
 #    Technology Stack
 - Language: C#
 - Framework: .NET 4.7.2
@@ -32,6 +26,16 @@ Practice and improve skills in C# programming
    - gain experience working with Git and GitHub
    - learn how to write clear and useful technical documentation
 
+## Features
+
+- [x] add a book
+- [x] issue a book
+- [x] show all books
+- [x] show current issues
+- [ ] return a book
+- [ ] search users
+- [ ] show issued books
+
 #   Future Plans
 
    - database integration (thinking of SQL lite)
@@ -39,6 +43,11 @@ Practice and improve skills in C# programming
    - add proper input validations (to ensure data consistency and robustness)
    - complete and polish currently unfinished features (e.g. returning books, better search, etc.)
    - add more like: DVD's etc. issue
+
+## How to Run
+1. Clone the repo: https://github.com/KacperZurawik/LibraryConsoleApp.git
+2. Open in Visual Studio
+3. Build and Run
      
     
 
