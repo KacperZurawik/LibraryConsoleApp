@@ -18,7 +18,7 @@ At the same time, the application simulates a simple library system and includes
 #    Technology Stack
 - Language: C#
 - Framework: .NET 4.7.2
-- Database: currently none
+- Database: currently none (Planned SQLite)
 
 #   Project Goals
  
