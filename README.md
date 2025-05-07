@@ -2,8 +2,9 @@
 > C# console application
 
 > This project was started in – December 2024.
-> 
+>
 
+### :warning:Application is still in progress!:warning:
 
 The primary goal of this project is to gain hands-on experience in building real-world applications using C# and .NET.
 At the same time, the application simulates a simple library system and includes features like:
@@ -14,8 +15,6 @@ At the same time, the application simulates a simple library system and includes
    - searching for users
    - show issued books
    
-### :warning:Application is still in progress!:warning:
-
 #    Technology Stack
 - Language: C#
 - Framework: .NET 4.7.2
