@@ -25,12 +25,43 @@ namespace LibraryConsoleApp.Services
 
         public void AddBook()
         {
-            Console.Write("Enter book title: \t");
-            string title = Console.ReadLine();
-            Console.Write("Enter book author: \t");
-            string author = Console.ReadLine();
-            Console.Write("Enter book description: \t");
-            string description = Console.ReadLine();
+            string title;
+            do
+            {
+                Console.Write("Enter book title: \t");
+                title = Console.ReadLine();
+
+
+                if (string.IsNullOrWhiteSpace(title))
+                {
+                    Console.WriteLine("Title cannot be empty!");
+                }
+            } while (string.IsNullOrWhiteSpace(title));
+
+            string author;
+            do
+            {
+                Console.Write("Enter book author: \t");
+                author = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(author))
+                {
+                    Console.WriteLine("Author cannot be empty!");
+                }
+            } while (string.IsNullOrWhiteSpace(author));
+
+
+            string description;
+            do
+            {
+                Console.Write("Enter book description: \t");
+                description = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(description))
+                {
+                    Console.WriteLine("Description cannot be empty!");
+                }
+            } while (string.IsNullOrWhiteSpace(description));
 
             var book = new Book(books.Count + 1, title, author, description);
             books.Add(book);
