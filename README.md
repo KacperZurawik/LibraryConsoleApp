@@ -35,6 +35,7 @@ Practice and improve skills in C# programming
 - [ ] return a book
 - [ ] search users
 - [ ] show issued books
+- [ ] remove selected books
 
 #   Future Plans
 
