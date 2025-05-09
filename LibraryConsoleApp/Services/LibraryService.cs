@@ -75,15 +75,35 @@ namespace LibraryConsoleApp.Services
         {
             //IsPersonRegistered();
 
-            Console.WriteLine("Enter book title: \t");
-            string title = Console.ReadLine();
-             
+            string title;
+            do
+            {
+                Console.WriteLine("Enter book title: \t");
+                title = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(title))
+                {
+                    Console.WriteLine("title cannot be empty!");
+                }
+            } while (string.IsNullOrWhiteSpace(title));
+
             if (books.Any(p => p.Title == title))
             {
                 isIssued = true;
                 Console.WriteLine($"Issue book: {title}");
-                Console.WriteLine("Email: \t");
-                string email = Console.ReadLine();
+
+                string email;
+                do
+                {
+                    Console.WriteLine("Email: \t");
+                    email = Console.ReadLine();
+
+                    if (string.IsNullOrWhiteSpace(email))
+                    {
+                        Console.WriteLine("Email cannot be empty!");
+                    }
+                }
+                while (string.IsNullOrWhiteSpace(email));
 
                 Console.WriteLine($"Issue {title} for {email}");
 
