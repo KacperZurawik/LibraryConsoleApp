@@ -54,11 +54,11 @@ namespace LibraryConsoleApp
                         break;
 
                     case "5":
-                        libraryServices.SearchPerson();
+                        libraryServices.SearchCustomer();
                         break;
 
                     case "6":
-                        libraryServices.ShowUsers();
+                        libraryServices.ShowCustomer();
                         break;
 
                     case "7":

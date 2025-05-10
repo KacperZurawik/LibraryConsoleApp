@@ -19,7 +19,7 @@ namespace LibraryConsoleApp.Services
     public class LibraryService
     {
         private List<Book> books = new List<Book>();
-        private List<Person> people = new List<Person>();
+        private List<Customer> customers = new List<Customer>();
         private List<Issue> issues = new List<Issue>();
         bool isIssued = false;
 
@@ -73,7 +73,7 @@ namespace LibraryConsoleApp.Services
        
         public void IssueBook() 
         {
-            //IsPersonRegistered();
+            //isCustomerRegistered();
 
             string title;
             do
@@ -143,7 +143,7 @@ namespace LibraryConsoleApp.Services
             }
         }
      
-        public void AddPerson()
+        public void AddCustomer()
         {
             Console.Write("Enter name: \t");
             string name = Console.ReadLine();
@@ -158,78 +158,78 @@ namespace LibraryConsoleApp.Services
 
             Console.WriteLine($"{name} {lastName} has been registered. \nMail: {email} \nPhone number: {phoneNumber}");
 
-            var person = new Person(people.Count + 1, name, lastName, address, phoneNumber, email);
-            people.Add(person);
+            var customer = new Customer(customers.Count + 1, name, lastName, address, phoneNumber, email);
+            customers.Add(customer);
 
             Thread.Sleep(5000);
             Console.Clear();
         }
         
-        public void SearchPerson()
+        public void SearchCustomer()
         {         
             Console.WriteLine("Enter email: ");
 
-            if (people.Count == 0)
+            if (customers.Count == 0)
             {
-                Console.WriteLine("There are no user in the system.");
+                Console.WriteLine("There are no customers in the system.");
             }
 
-            if (people.Count >= 1 ) 
+            if (customers.Count >= 1 ) 
             {
                 Console.WriteLine("Enter an address e-mail: ");
                 string email = Console.ReadLine();
 
-                if (people.Any(person => person.Email == email))
+                if (customers.Any(customer => customer.Email == email))
                 {
-                    Console.WriteLine(people);
+                    Console.WriteLine(customers);
                     Console.ReadLine();
                 }
             }
         }
 
-        public void ShowUsers()
+        public void ShowCustomer()
         {
             Console.Clear();
-            Console.WriteLine($"There are {people.Count} people in the library management system registered.\n");
+            Console.WriteLine($"There are {customers.Count} customer in the library management system registered.\n");
 
-            foreach (var person in people)
+            foreach (var customer in customers)
             {
-                Console.WriteLine(person.Name);
-                Console.WriteLine(person.LastName);
-                Console.WriteLine(person.Address);
-                Console.WriteLine(person.PhoneNumber);
-                Console.WriteLine(person.Email);
+                Console.WriteLine(customer.Name);
+                Console.WriteLine(customer.LastName);
+                Console.WriteLine(customer.Address);
+                Console.WriteLine(customer.PhoneNumber);
+                Console.WriteLine(customer.Email);
 
                 Console.WriteLine(new string('-', 45));
             } 
 
         }
 
-        // This method checks if the person is registered in the system. 
-        // If not, you can create a new record or find if the person is already registered.
-        public void IsPersonRegistered()
+        // This method checks if the customer is registered in the system. 
+        // If not, you can create a new record or find if the customer is already registered.
+        public void isCustomerRegistered()
         {
-            Console.WriteLine("Is the person available in the Library system? \nY/N?");
-            string isPersonRegistered = Console.ReadLine();
+            Console.WriteLine("Is the customer available in the Library system? \nY/N?");
+            string isCustomerRegistered = Console.ReadLine();
 
-            if (isPersonRegistered == "y" || isPersonRegistered == "Y")
+            if (isCustomerRegistered == "y" || isCustomerRegistered == "Y")
             {
                 Console.WriteLine("Enter e-mail address: \t");
                 string email = Console.ReadLine();
 
-                if (people.Any(p => p.Email == email))
+                if (customers.Any(p => p.Email == email))
                 {
                     Console.WriteLine(email);
                 }
                 else
                 {
-                    Console.WriteLine("No user found with the specified email.");
+                    Console.WriteLine("No customers found with the specified email.");
                 }
             }
 
-            if (isPersonRegistered == "n" || isPersonRegistered == "N")
+            if (isCustomerRegistered == "n" || isCustomerRegistered == "N")
             {
-                AddPerson();
+                AddCustomer();
             }
 
             else

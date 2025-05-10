@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace LibraryConsoleApp.Models
 {
-    internal class Person
+    internal class Customer
     {
-        public int PersonId { get; }
+        public int CustomerId { get; }
         public string Name { get; set; }
         public string LastName { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
 
-        public Person(int personId, string name, string lastName, string phoneNumber, string address, string email)
+        public Customer(int personId, string name, string lastName, string phoneNumber, string address, string email)
         {
-            PersonId = personId;
+            CustomerId = personId;
             Name = name;
             LastName = lastName;
             Address = address;
